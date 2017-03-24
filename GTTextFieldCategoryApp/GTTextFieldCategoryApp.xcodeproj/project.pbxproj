@@ -16,6 +16,7 @@
 		F17718A81E84EEA40012B278 /* GTTextFieldCategoryAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F17718A71E84EEA40012B278 /* GTTextFieldCategoryAppTests.m */; };
 		F17718B31E84EEA40012B278 /* GTTextFieldCategoryAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F17718B21E84EEA40012B278 /* GTTextFieldCategoryAppUITests.m */; };
 		F17718C61E84F8FE0012B278 /* UITextField+keyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = F17718C51E84F8FE0012B278 /* UITextField+keyboard.m */; };
+		F17719081E850A2F0012B278 /* UITextView+keyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = F17719071E850A2F0012B278 /* UITextView+keyboard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		F17718B41E84EEA40012B278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F17718C41E84F8FE0012B278 /* UITextField+keyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+keyboard.h"; sourceTree = "<group>"; };
 		F17718C51E84F8FE0012B278 /* UITextField+keyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+keyboard.m"; sourceTree = "<group>"; };
+		F17719061E850A2F0012B278 /* UITextView+keyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+keyboard.h"; sourceTree = "<group>"; };
+		F17719071E850A2F0012B278 /* UITextView+keyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+keyboard.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +152,8 @@
 			children = (
 				F17718C41E84F8FE0012B278 /* UITextField+keyboard.h */,
 				F17718C51E84F8FE0012B278 /* UITextField+keyboard.m */,
+				F17719061E850A2F0012B278 /* UITextView+keyboard.h */,
+				F17719071E850A2F0012B278 /* UITextView+keyboard.m */,
 			);
 			path = extern;
 			sourceTree = "<group>";
@@ -293,6 +298,7 @@
 				F17718921E84EEA40012B278 /* AppDelegate.m in Sources */,
 				F177188F1E84EEA40012B278 /* main.m in Sources */,
 				F17718C61E84F8FE0012B278 /* UITextField+keyboard.m in Sources */,
+				F17719081E850A2F0012B278 /* UITextView+keyboard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

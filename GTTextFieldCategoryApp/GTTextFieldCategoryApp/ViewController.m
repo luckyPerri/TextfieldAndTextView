@@ -7,12 +7,12 @@
 //
 
 #import "ViewController.h"
-#import "UITextField+keyboard.h"
+#import "UITextView+keyboard.h"
 
 
 @interface ViewController ()
 
-@property (nonatomic , strong)UITextField* textField;
+@property (nonatomic , strong)UITextView* textField;
 @end
 
 
@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    UITextField* textField = [[UITextField alloc] initWithFrame:CGRectMake(100, 500, 100, 30)];
+    UITextView* textField = [[UITextView alloc] initWithFrame:CGRectMake(100, 300, 100, 200)];
     textField.isAutoAdjust = YES;
     textField.backgroundColor = [UIColor redColor];
     [self.view addSubview:textField];

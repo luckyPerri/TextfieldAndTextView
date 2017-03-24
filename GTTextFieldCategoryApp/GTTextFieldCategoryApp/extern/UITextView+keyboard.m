@@ -1,21 +1,19 @@
 //
-//  UITextField+keyboard.m
+//  UITextView+keyboard.m
 //  GTTextFieldCategoryApp
 //
 //  Created by zhaoke.hzk on 17/3/24.
 //  Copyright © 2017年 zhaoke.hzk. All rights reserved.
 //
 
-#import "UITextField+keyboard.h"
+#import "UITextView+keyboard.h"
 #import <objc/runtime.h>
-
-const char textfieldKeyboardKey;
-@implementation UITextField (keyboard)
-
+const char textviewKeyboardKey;
+@implementation UITextView (keyboard)
 
 -(void)setIsAutoAdjust:(BOOL)isAutoAdjust{
     
-    objc_setAssociatedObject(self, &textfieldKeyboardKey,@(isAutoAdjust), OBJC_ASSOCIATION_ASSIGN);
+    objc_setAssociatedObject(self, &textviewKeyboardKey,@(isAutoAdjust), OBJC_ASSOCIATION_ASSIGN);
     if (isAutoAdjust) {
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
@@ -25,8 +23,7 @@ const char textfieldKeyboardKey;
 }
 
 -(BOOL)isAutoAdjust{
-    
-    return  objc_getAssociatedObject(self, &textfieldKeyboardKey);
+    return  objc_getAssociatedObject(self, &textviewKeyboardKey);
 }
 
 -(void)keyboardWillShow:(NSNotification* )notify{
@@ -67,5 +64,6 @@ const char textfieldKeyboardKey;
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     
 }
+
 
 @end
