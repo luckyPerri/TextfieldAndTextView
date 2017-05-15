@@ -27,6 +27,9 @@ const char textviewKeyboardKey;
 }
 
 -(void)keyboardWillShow:(NSNotification* )notify{
+    if (!self.isFirstResponder) {
+        return;
+    }
     
     CGPoint convertedPoint = [self convertPoint:CGPointZero toView:[UIApplication sharedApplication].keyWindow];
     CGRect startKeyboardRect = [notify.userInfo[UIKeyboardFrameBeginUserInfoKey] CGRectValue];
